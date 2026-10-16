@@ -1,0 +1,64 @@
+<div class="wrap">
+  {{crumbs}}
+  <h1>{{page.h1}}</h1>
+  <p class="lead">{{page.lead}}</p>
+  {{toolTabs}}
+
+  <section class="panel" id="tool-conv">
+    <h2>{{page.convTitle}}</h2>
+    <p class="note">{{page.convDesc}}</p>
+    <div class="row2">
+      <div class="field"><label for="conv-unit">{{page.lblUnit}}</label><select id="conv-unit"></select></div>
+      <div class="field"><label for="conv-value">{{page.lblValue}}</label><input type="number" id="conv-value" class="ltr" inputmode="decimal" step="any" min="0" placeholder="{{page.valPh}}"></div>
+    </div>
+    <div class="result"><strong>{{page.heightTitle}}:</strong> <span id="height-result">—</span></div>
+    <h3>{{page.allTitle}}</h3>
+    <div class="stats" id="conv-results"></div>
+  </section>
+
+  <section class="panel" id="tool-plot">
+    <h2>{{page.plotTitle}}</h2>
+    <p class="note">{{page.plotDesc}}</p>
+    <div class="field"><span class="lbl">{{page.side1}}</span><div class="row2"><input type="number" id="f1" class="ltr" inputmode="decimal" min="0" step="any" placeholder="{{page.feetPh}}" aria-label="{{page.side1}} {{page.feetPh}}"><input type="number" id="i1" class="ltr" inputmode="decimal" min="0" step="any" placeholder="{{page.inchPh}}" aria-label="{{page.side1}} {{page.inchPh}}"></div></div>
+    <div class="field"><span class="lbl">{{page.side2}}</span><div class="row2"><input type="number" id="f2" class="ltr" inputmode="decimal" min="0" step="any" placeholder="{{page.feetPh}}" aria-label="{{page.side2}} {{page.feetPh}}"><input type="number" id="i2" class="ltr" inputmode="decimal" min="0" step="any" placeholder="{{page.inchPh}}" aria-label="{{page.side2}} {{page.inchPh}}"></div></div>
+    <div class="field"><span class="lbl">{{page.side3}}</span><div class="row2"><input type="number" id="f3" class="ltr" inputmode="decimal" min="0" step="any" placeholder="{{page.feetPh}}" aria-label="{{page.side3}} {{page.feetPh}}"><input type="number" id="i3" class="ltr" inputmode="decimal" min="0" step="any" placeholder="{{page.inchPh}}" aria-label="{{page.side3}} {{page.inchPh}}"></div></div>
+    <div class="field"><span class="lbl">{{page.side4}}</span><div class="row2"><input type="number" id="f4" class="ltr" inputmode="decimal" min="0" step="any" placeholder="{{page.feetPh}}" aria-label="{{page.side4}} {{page.feetPh}}"><input type="number" id="i4" class="ltr" inputmode="decimal" min="0" step="any" placeholder="{{page.inchPh}}" aria-label="{{page.side4}} {{page.inchPh}}"></div></div>
+    <div class="field"><label for="marla-type">{{page.lblMarla}}</label>
+      <select id="marla-type">
+        {{#each page.marla}}<option value="{{this.v}}">{{this.n}}</option>
+        {{/each}}
+      </select></div>
+    <div class="btn-row"><button type="button" class="btn" id="plot-btn">{{page.btnPlot}}</button><button type="button" class="btn ghost" id="plot-reset">{{page.btnReset}}</button></div>
+    <div class="result" id="plot-result" hidden aria-live="polite">
+      <div class="stats">
+        <div class="stat"><span>{{page.rSqft}}</span><strong id="res-sqft"></strong></div>
+        <div class="stat"><span>{{page.rSqyd}}</span><strong id="res-sqyd"></strong></div>
+        <div class="stat"><span>{{page.rMarla}}</span><strong id="res-marla"></strong></div>
+        <div class="stat"><span>{{page.rKanal}}</span><strong id="res-kanal"></strong></div>
+        <div class="stat"><span>{{page.rAvg}}</span><strong id="res-avg"></strong></div>
+      </div>
+      <p id="res-breakdown" style="margin-top:10px;font-weight:700"></p>
+    </div>
+    <p class="note">{{page.plotNote}}</p>
+  </section>
+
+  <details>
+    <summary>{{page.refTitle}}</summary>
+    <div>
+      <table>
+        <thead><tr><th>{{page.refColUnit}}</th><th>{{page.refColEq}}</th></tr></thead>
+        <tbody>
+          {{#each page.ref}}<tr><th scope="row">{{this.u}}</th><td>{{this.eq}}</td></tr>
+          {{/each}}
+        </tbody>
+      </table>
+    </div>
+  </details>
+
+  <h2>{{page.marlaTitle}}</h2>
+  <p class="prose">{{page.marlaText}}</p>
+
+  <h2>{{page.faqTitle}}</h2>
+  {{#each page.faq}}<details><summary>{{this.q}}</summary><div><p>{{this.a}}</p></div></details>
+  {{/each}}
+</div>

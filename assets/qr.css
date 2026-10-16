@@ -1,0 +1,22 @@
+/* Mufeed Tools | qr.css | sirf QR page par style.css ke baad load hota hai */
+.qr-forms [data-form]{display:block}
+.qr-forms [data-form][hidden]{display:none!important}
+input[type=color]{width:100%;height:48px;padding:3px;background:var(--card);border:1px solid var(--line);border-radius:8px;cursor:pointer}
+input[type=file]{width:100%;padding:10px;background:var(--paper);border:1px dashed var(--line);border-radius:8px;font-size:.92rem}
+.qr-design{margin-block-start:18px;padding-block-start:14px;border-block-start:1px dashed var(--line)}
+.qr-design h2{font-size:1.1rem;margin-block:0 10px}
+.qr-phone-row{display:grid;grid-template-columns:1fr 1.2fr;gap:8px}
+.qr-phone{width:280px;max-width:100%;margin:22px auto 0;padding:24px 14px 18px;border:10px solid var(--ink);border-radius:30px;background:#fff;color:#14211f;text-align:center}
+.qr-phone::before{content:"";display:block;width:60px;height:6px;margin:-12px auto 10px;background:var(--ink);border-radius:9px}
+.qr-title{font-weight:700;font-size:1.05rem;line-height:1.6;min-height:1.6em}
+.qr-sub{color:#1f7a6d;font-size:.92rem;font-weight:600;line-height:1.6}
+.qr-canvas{display:flex;justify-content:center;margin:10px 0;transition:opacity .2s}
+.qr-canvas canvas{max-width:100%;height:auto}
+.qr-canvas.empty{opacity:.25}
+.qr-meta{direction:ltr;font-size:.85rem;color:#52645f;word-break:break-all;line-height:1.6}
+.qr-actions{display:flex;flex-wrap:wrap;gap:8px;margin-block-start:18px;align-items:center}
+.qr-actions .btn{flex:1;min-width:130px}
+.qr-actions select{width:auto;flex:0 0 auto}
+.kinds{list-style:none}
+.kinds li{padding:10px 4px;border-block-end:1px solid var(--line)}
+.kinds b{color:var(--green)}

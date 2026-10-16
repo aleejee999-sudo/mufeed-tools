@@ -1,0 +1,53 @@
+<div class="wrap">
+  <h1>{{page.h1}}</h1>
+  <p class="lead">{{page.lead}}</p>
+</div>
+
+<section class="cw-wrap" id="cw" aria-label="{{page.calLabel}}">
+  <div class="cw-card">
+    <h2 class="cw-title" id="cw-title"></h2>
+    <div class="cw-clock" id="cw-clock" dir="ltr">--:--:--</div>
+    <div class="cw-dates">
+      <button type="button" class="cw-date" id="cw-g"></button>
+      <button type="button" class="cw-date" id="cw-d"></button>
+      <button type="button" class="cw-date" id="cw-h"></button>
+    </div>
+    <div class="cw-adj"><label for="cw-adj" id="cw-adj-l"></label> <select id="cw-adj"></select></div>
+    <div class="cw-special" id="cw-special" hidden></div>
+    <h3 class="cw-sub" id="cw-jt"></h3>
+    <div class="cw-jantri" id="cw-jantri"></div>
+    <p class="cw-note" id="cw-note"></p>
+    <div class="cw-blog">
+      <h3 id="cw-bt"></h3>
+      <p id="cw-bp"></p>
+      <button type="button" class="cw-btn" id="cw-bb"></button>
+    </div>
+    <button type="button" class="cw-btn alt" id="cw-year"></button>
+  </div>
+  <div class="cw-modal" id="cw-modal" hidden>
+    <div class="cw-box" role="dialog" aria-modal="true" aria-label="{{page.calLabel}}">
+      <button type="button" class="cw-x" id="cw-x" aria-label="close">✕</button>
+      <div id="cw-mc"></div>
+    </div>
+  </div>
+</section>
+
+<div class="wrap">
+  <p class="lead">{{page.calIntro}}</p>
+
+  <h2>{{page.toolsTitle}}</h2>
+  <nav class="index" aria-label="{{page.toolsTitle}}">
+    {{#each tools}}<a href="/{{lang}}/{{this.slug}}"><span class="ico">{{this.ico}}</span><span><span class="t">{{this.name}}</span><span class="d">{{this.desc}}</span></span><span class="go">›</span></a>
+    {{/each}}
+  </nav>
+
+  <h2>{{page.whyTitle}}</h2>
+  <ul class="prose">
+    {{#each page.why}}<li>{{this}}</li>
+    {{/each}}
+  </ul>
+
+  <h2>{{page.faqTitle}}</h2>
+  {{#each page.faq}}<details><summary>{{this.q}}</summary><div><p>{{this.a}}</p></div></details>
+  {{/each}}
+</div>

@@ -1,0 +1,35 @@
+{
+  "buildCommand": "node build.js",
+  "outputDirectory": "dist",
+  "cleanUrls": true,
+  "trailingSlash": false,
+  "redirects": [
+    { "source": "/index.html", "destination": "/ur/", "statusCode": 301 },
+    { "source": "/horoscope.html", "destination": "/ur/horoscope", "statusCode": 301 },
+    { "source": "/age-counter.html", "destination": "/ur/age-calculator", "statusCode": 301 },
+    { "source": "/wa-direct.html", "destination": "/ur/whatsapp-direct", "statusCode": 301 },
+    { "source": "/tasbih-counter.html", "destination": "/ur/tasbih-counter", "statusCode": 301 },
+    { "source": "/unit-converter.html", "destination": "/ur/unit-converter", "statusCode": 301 },
+    { "source": "/qr-code.html", "destination": "/ur/qr-code", "statusCode": 301 },
+    { "source": "/blog.html", "destination": "/ur/blog", "statusCode": 301 },
+    { "source": "/about.html", "destination": "/ur/about", "statusCode": 301 },
+    { "source": "/contact.html", "destination": "/ur/contact", "statusCode": 301 },
+    { "source": "/privacy.html", "destination": "/ur/privacy", "statusCode": 301 },
+    { "source": "/blog-age-calculator.html", "destination": "/ur/blog/age-calculator", "statusCode": 301 },
+    { "source": "/blog-tasbeeh-counter.html", "destination": "/ur/blog/tasbeeh-counter", "statusCode": 301 },
+    { "source": "/blog-tasbeeh.html", "destination": "/ur/blog/tasbeeh-counter", "statusCode": 301 },
+    { "source": "/blog-horoscope.html", "destination": "/ur/blog/horoscope", "statusCode": 301 },
+    { "source": "/blog-qr-code.html", "destination": "/ur/blog/qr-code", "statusCode": 301 },
+    { "source": "/blog-unit-converter.html", "destination": "/ur/blog/unit-converter", "statusCode": 301 },
+    { "source": "/blog-whatsapp-direct.html", "destination": "/ur/blog/whatsapp-direct", "statusCode": 301 }
+  ],
+  "headers": [
+    {
+      "source": "/(.*)",
+      "headers": [
+        { "key": "X-Content-Type-Options", "value": "nosniff" },
+        { "key": "Referrer-Policy", "value": "strict-origin-when-cross-origin" }
+      ]
+    }
+  ]
+}

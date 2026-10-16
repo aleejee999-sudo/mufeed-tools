@@ -1,0 +1,58 @@
+{
+  "pages": {
+    "age-calculator": {
+      "title": "Age Calculator | Your Exact Age in Years, Months and Days | Mufeed Tools",
+      "description": "Enter a date of birth to see your exact age in years, months, days, weeks and hours, on today's date or any date you choose, plus days to your next birthday. Free.",
+      "h1": "Age Calculator",
+      "crumb": "Age calculator",
+      "lead": "Pick your date of birth to see your age in years, months and days. You can also work out your age on a specific date, such as a job or admission deadline.",
+      "lblDob": "Date of birth",
+      "lblRef": "Calculate age on (today's date is filled in)",
+      "btn": "Calculate age 🎈",
+      "note": "Results follow the Gregorian calendar. For official forms, check the age rule and the cut-off date in the notice.",
+      "howTitle": "How to calculate your age",
+      "how": [
+        "Choose your date of birth.",
+        "If you need your age on a particular date (for example an application deadline), change the second box; otherwise leave today's date.",
+        "Press “Calculate age”.",
+        "You will see years, months, days, total days, weeks, hours and the days left until your next birthday."
+      ],
+      "faqTitle": "Age calculator FAQ",
+      "faq": [
+        { "q": "How do I find my age on a job application cut-off date?", "a": "Enter your date of birth, then choose the cut-off date from the notice in the second box. The tool gives your age on that date." },
+        { "q": "Are leap years included?", "a": "Yes. Days are counted on the real calendar, so leap years are included automatically." },
+        { "q": "How is age in Hijri years worked out?", "a": "The tool divides your total days by the average lunar year (about 354.37 days) for an approximate figure. It is an estimate, not an exact Hijri birth date." },
+        { "q": "Is my date of birth saved?", "a": "No. It is used inside your browser only." }
+      ]
+    },
+    "whatsapp-direct": {
+      "title": "WhatsApp Direct Chat: Message Without Saving a Number | Mufeed Tools",
+      "description": "Start a WhatsApp chat without saving the number. Choose the country code, type the number and message, or create and copy a wa.me link. Free.",
+      "h1": "WhatsApp Direct Chat and Link Generator",
+      "crumb": "WhatsApp direct",
+      "lead": "Choose the country code, type the number and, if you like, a ready message. Open the chat or copy its link.",
+      "lblCc": "Country", "lblNum": "Mobile number", "numPh": "e.g. 300 1234567", "lblMsg": "Message (optional)",
+      "open": "Open chat in WhatsApp 🚀", "copy": "Copy link", "lblLink": "Ready link",
+      "note": "We do not save the number or message; the chat opens straight in WhatsApp on your device. This site is not affiliated with WhatsApp.",
+      "countries": [
+        { "c": "92", "n": "Pakistan" }, { "c": "44", "n": "United Kingdom" }, { "c": "1", "n": "USA / Canada" },
+        { "c": "966", "n": "Saudi Arabia" }, { "c": "971", "n": "UAE" }, { "c": "91", "n": "India" },
+        { "c": "974", "n": "Qatar" }, { "c": "965", "n": "Kuwait" }, { "c": "968", "n": "Oman" }, { "c": "973", "n": "Bahrain" }
+      ],
+      "howTitle": "How to use it",
+      "how": [
+        "Choose the country, for example Pakistan (+92).",
+        "Type the number without the leading zero. If you type it, the tool removes it for you.",
+        "Write a message if you want one.",
+        "Press “Open chat” or copy the link."
+      ],
+      "faqTitle": "WhatsApp direct chat FAQ",
+      "faq": [
+        { "q": "What is a wa.me link?", "a": "An official WhatsApp link that opens a chat with a given number, optionally with a ready message. The tool builds it for you once you enter the number." },
+        { "q": "Do I need to save the number?", "a": "No. The chat opens without adding the number to your contacts." },
+        { "q": "How do I write the number?", "a": "Pick the country code and type the number without the leading zero, or type it in full international form starting with + or 00." },
+        { "q": "Why does the chat not open?", "a": "The number may not have a WhatsApp account, or the country code may be wrong." }
+      ]
+    }
+  }
+}

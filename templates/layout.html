@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="{{lang}}" dir="{{dir}}">
+<head>
+{{head}}
+</head>
+<body>
+<a class="skip" href="#main">{{site.skip}}</a>
+<header class="site-head">
+  <div class="wrap">
+    <a class="brand" href="/{{lang}}/"><i>{{site.mark}}</i>{{site.brand}}</a>
+    <nav class="main-nav" aria-label="{{site.navLabel}}">{{nav}}</nav>
+    <div class="langs" role="group" aria-label="Language">{{langs}}</div>
+  </div>
+</header>
+<main id="main">
+{{content}}
+</main>
+<footer class="site-foot">
+  <div class="wrap">
+    <span>© {{year}} {{site.brand}}</span>
+    <span><a href="/{{lang}}/about">{{site.footer.about}}</a> · <a href="/{{lang}}/contact">{{site.footer.contact}}</a> · <a href="/{{lang}}/privacy">{{site.footer.privacy}}</a></span>
+  </div>
+</footer>
+<script>document.addEventListener('click',function(e){var a=e.target.closest('.langs a');if(a)document.cookie='site_lang='+a.lang+';path=/;max-age=31536000;samesite=lax'})</script>
+{{scripts}}
+</body>
+</html>

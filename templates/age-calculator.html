@@ -1,0 +1,26 @@
+<div class="wrap">
+  {{crumbs}}
+  <h1>{{page.h1}}</h1>
+  <p class="lead">{{page.lead}}</p>
+  {{toolTabs}}
+
+  <section class="panel" id="tool-age">
+    <div class="row2">
+      <div class="field"><label for="age-dob">{{page.lblDob}}</label><input type="date" id="age-dob"></div>
+      <div class="field"><label for="age-ref">{{page.lblRef}}</label><input type="date" id="age-ref"></div>
+    </div>
+    <button type="button" class="btn block" id="age-btn">{{page.btn}}</button>
+    <div class="result" id="age-result" hidden aria-live="polite"><p id="age-text" style="white-space:pre-line"></p></div>
+    <p class="note">{{page.note}}</p>
+  </section>
+
+  <h2>{{page.howTitle}}</h2>
+  <ol class="prose">
+    {{#each page.how}}<li>{{this}}</li>
+    {{/each}}
+  </ol>
+
+  <h2>{{page.faqTitle}}</h2>
+  {{#each page.faq}}<details><summary>{{this.q}}</summary><div><p>{{this.a}}</p></div></details>
+  {{/each}}
+</div>

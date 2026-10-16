@@ -1,0 +1,8 @@
+<div class="wrap">
+  {{crumbs}}
+  <h1>{{page.h1}}</h1>
+  <p class="lead">{{page.lead}}</p>
+  {{#each page.sections}}<h2>{{this.h}}</h2>
+  <div class="prose">{{this.body}}</div>
+  {{/each}}
+</div>

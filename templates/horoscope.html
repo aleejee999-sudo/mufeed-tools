@@ -1,0 +1,42 @@
+<div class="wrap">
+  {{crumbs}}
+  <h1>{{page.h1}}</h1>
+  <p class="lead">{{page.lead}}</p>
+  {{toolTabs}}
+
+  <div class="warn">{{page.warn}}</div>
+
+  <section class="panel" id="tool-horoscope">
+    <div class="row2">
+      <div class="field"><label for="hz-name">{{page.lblName}}</label><input type="text" id="hz-name" autocomplete="off" placeholder="{{page.namePh}}"></div>
+      <div class="field"><label for="hz-dob">{{page.lblDob}}</label><input type="date" id="hz-dob"></div>
+    </div>
+    <button type="button" class="btn block" id="hz-btn">{{page.btn}}</button>
+    <div class="result" id="hz-result" hidden aria-live="polite">
+      <h2 id="hz-res-name" style="margin:0 0 8px"></h2>
+      <p><strong>{{page.lblZodiac}}</strong> <span id="hz-zodiac"></span></p>
+      <p><strong>{{page.lblPersonality}}</strong> <span id="hz-personality"></span></p>
+      <p><strong>{{page.lblFuture}}</strong> <span id="hz-future"></span></p>
+      <p><strong>{{page.lblTravel}}</strong> <span id="hz-travel"></span></p>
+      <div class="btn-row">
+        <button type="button" class="btn ghost" id="hz-share-fb">{{page.shareFb}}</button>
+        <button type="button" class="btn alt" id="hz-share-wa">{{page.shareWa}}</button>
+      </div>
+    </div>
+  </section>
+
+  <h2>{{page.signsTitle}}</h2>
+  <div class="panel">
+    <table>
+      <thead><tr><th>{{page.colSign}}</th><th>{{page.colDates}}</th></tr></thead>
+      <tbody>
+        {{#each page.signs}}<tr><th scope="row">{{this.n}}</th><td>{{this.d}}</td></tr>
+        {{/each}}
+      </tbody>
+    </table>
+  </div>
+
+  <h2>{{page.faqTitle}}</h2>
+  {{#each page.faq}}<details><summary>{{this.q}}</summary><div><p>{{this.a}}</p></div></details>
+  {{/each}}
+</div>

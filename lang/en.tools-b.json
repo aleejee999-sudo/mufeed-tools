@@ -1,0 +1,72 @@
+{
+  "pages": {
+    "unit-converter": {
+      "title": "Unit Converter & Plot Area Calculator | Marla, Kanal, Sq Ft, Gaz | Mufeed Tools",
+      "description": "Convert centimetres to feet and inches, and work out plot area in square feet, square yards, marla and kanal. Includes a unit reference table. Free.",
+      "h1": "Unit Converter and Plot Area Calculator (Marla, Kanal)",
+      "crumb": "Units & plot area",
+      "lead": "Convert a length from one unit to another, and work out a plot's area in marla, kanal, square feet and square yards from its four walls.",
+      "convTitle": "Length converter",
+      "convDesc": "Choose a unit and type a value; the result appears in every other unit at once.",
+      "lblUnit": "Choose unit", "lblValue": "Enter the length or number", "valPh": "e.g. 182",
+      "heightTitle": "Height in feet + inches", "allTitle": "Result in all units",
+      "plotTitle": "Plot area (regular and irregular)",
+      "plotDesc": "Enter the length of the four walls in feet and inches.",
+      "side1": "Front wall (side 1)", "side2": "Left wall (side 2)", "side3": "Back wall (side 3)", "side4": "Right wall (side 4)",
+      "feetPh": "ft", "inchPh": "in", "lblMarla": "Marla standard",
+      "marla": [ { "v": "225", "n": "225 sq ft (common)" }, { "v": "250", "n": "250 sq ft" }, { "v": "272.25", "n": "272.25 sq ft" } ],
+      "btnPlot": "Calculate area 📏", "btnReset": "Clear fields",
+      "rSqft": "Total square feet", "rSqyd": "Total square yards", "rMarla": "Marla", "rKanal": "Kanal", "rAvg": "Average length × width",
+      "plotNote": "The calculation uses the average of each pair of opposite walls. What is left after the marlas is shown in square feet and square inches (1 sq ft = 144 sq in). For irregular plots the result is approximate.",
+      "refTitle": "📋 Unit reference table", "refColUnit": "Unit", "refColEq": "Equals",
+      "ref": [
+        { "u": "1 millimetre", "eq": "0.03937 in" },
+        { "u": "1 centimetre", "eq": "0.3937 in" },
+        { "u": "1 inch", "eq": "2.54 cm" },
+        { "u": "1 foot", "eq": "12 in = 30.48 cm" },
+        { "u": "1 yard (gaz)", "eq": "3 ft = 36 in" },
+        { "u": "1 metre", "eq": "100 cm = 3.28084 ft = 39.37 in" },
+        { "u": "1 kilometre", "eq": "1000 m = 0.621371 mi" },
+        { "u": "1 square yard", "eq": "9 sq ft" },
+        { "u": "1 marla", "eq": "225 sq ft = 25 sq yd (by standard)" },
+        { "u": "1 kanal", "eq": "20 marla" }
+      ],
+      "marlaTitle": "How many square feet is a marla?",
+      "marlaText": "This tool uses 225 sq ft (25 sq yd) for a marla. In some areas and housing schemes 250 or 272.25 sq ft (30.25 sq yd) is used instead, so check the standard where you are before buying or selling a plot, and choose it from the list above.",
+      "faqTitle": "Units and plot area FAQ",
+      "faq": [
+        { "q": "How many square feet is one marla?", "a": "Usually 225 sq ft (25 sq yd), though some areas and schemes use 250 or 272.25 sq ft. Choose the right standard in the tool." },
+        { "q": "How many marla are in a kanal?", "a": "One kanal equals 20 marla. On the 225 standard that is 4,500 sq ft, and on the 272.25 standard it is 5,445 sq ft." },
+        { "q": "How do I convert centimetres to feet and inches?", "a": "Choose centimetre as the unit and type the value. For example, 182 cm is about 5 ft 11.65 in." },
+        { "q": "How is the area of an irregular plot worked out?", "a": "The tool averages each pair of opposite walls to get a length and a width. It gives an estimate; for legal matters rely on a licensed surveyor." }
+      ]
+    },
+    "horoscope": {
+      "title": "Horoscope & Fortune | Find Your Zodiac Sign from Your Birth Date | Mufeed Tools",
+      "description": "Enter your name and date of birth to find your zodiac sign, and see the dates of all twelve signs. The horoscope and fortune are for fun only. Free.",
+      "h1": "Horoscope and Fortune",
+      "crumb": "Horoscope & fortune",
+      "lead": "Enter your name and date of birth and your zodiac sign is found for you, with a playful reading.",
+      "warn": "This tool is for fun only. No one can truly foretell the future, so please do not base any decision, business move or relationship on a horoscope or fortune.",
+      "lblName": "Your name", "namePh": "Type your name here", "lblDob": "Date of birth", "btn": "Show my sign and fortune ✨",
+      "lblZodiac": "⭐ Your sign:", "lblPersonality": "✨ Personality:", "lblFuture": "🚀 The days ahead:", "lblTravel": "✈️ Travel and future:",
+      "shareFb": "Share on Facebook", "shareWa": "Share on WhatsApp",
+      "signsTitle": "Dates of the twelve zodiac signs", "colSign": "Sign", "colDates": "Dates",
+      "signs": [
+        { "n": "Aries", "d": "21 March – 19 April" }, { "n": "Taurus", "d": "20 April – 20 May" },
+        { "n": "Gemini", "d": "21 May – 20 June" }, { "n": "Cancer", "d": "21 June – 22 July" },
+        { "n": "Leo", "d": "23 July – 22 August" }, { "n": "Virgo", "d": "23 August – 22 September" },
+        { "n": "Libra", "d": "23 September – 22 October" }, { "n": "Scorpio", "d": "23 October – 21 November" },
+        { "n": "Sagittarius", "d": "22 November – 21 December" }, { "n": "Capricorn", "d": "22 December – 19 January" },
+        { "n": "Aquarius", "d": "20 January – 18 February" }, { "n": "Pisces", "d": "19 February – 20 March" }
+      ],
+      "faqTitle": "Zodiac FAQ",
+      "faq": [
+        { "q": "How is my zodiac sign worked out?", "a": "Your sign depends on your date of birth. The year is divided into twelve parts, each with a sign. Check your date in the table above, or enter it in the tool." },
+        { "q": "How is the fortune produced?", "a": "The tool picks from ready-written playful lines using a simple rule based on the length of your name and your date. There is no astronomical calculation, so do not take it as true." },
+        { "q": "Are horoscopes and fortunes real?", "a": "No. They are for entertainment only and there is no basis for believing them." },
+        { "q": "Are my name and date of birth saved?", "a": "No. Both are used inside your browser only." }
+      ]
+    }
+  }
+}

@@ -1,0 +1,55 @@
+{
+  "pages": {
+    "qr-code": {
+      "title": "Free QR Code Generator | QR for Links, WhatsApp, Wi-Fi and vCards | Mufeed Tools",
+      "description": "Create a QR code for a link, WhatsApp number, Wi-Fi password, vCard or account details. Change the colours, add a logo, download PNG or JPG, or print a poster. Free.",
+      "h1": "QR Code Generator",
+      "crumb": "QR code generator",
+      "lead": "Create a QR code for a link, WhatsApp, Wi-Fi, a vCard or account details. Change the colours, add a logo, then download it or print a poster. Everything happens in your browser and your data goes nowhere.",
+      "libFail": "The QR library did not load. Check your internet connection and reopen the page.",
+      "types": [ { "k": "pay", "n": "Account details" }, { "k": "wa", "n": "WhatsApp" }, { "k": "wifi", "n": "Wi-Fi" }, { "k": "vcard", "n": "vCard" }, { "k": "text", "n": "Link / text" } ],
+      "payWarn": "This tab writes the name, bank and account/IBAN as plain text inside the QR. It is not an official payment QR from a bank, and bank apps will not necessarily read it as a payment. For an official merchant QR, contact your bank. Scan the code with your own phone before putting a poster up.",
+      "lblBankTitle": "Account holder name", "lblBank": "Bank or wallet name", "lblIban": "Account number / IBAN",
+      "lblCc": "Country", "lblPhone": "Mobile number", "lblWaMsg": "Ready message (optional)",
+      "lblSsid": "Wi-Fi name (SSID)", "lblPass": "Password", "lblSec": "Security",
+      "lblName": "Name", "lblOrg": "Shop / company", "lblEmail": "Email", "lblAddr": "Address", "lblText": "Website link or any text",
+      "secOpts": [ { "v": "WPA", "n": "WPA / WPA2" }, { "v": "SAE", "n": "WPA3" }, { "v": "nopass", "n": "Open (no password)" } ],
+      "countries": [
+        { "c": "92", "n": "Pakistan" }, { "c": "44", "n": "United Kingdom" }, { "c": "1", "n": "USA / Canada" },
+        { "c": "966", "n": "Saudi Arabia" }, { "c": "971", "n": "UAE" }, { "c": "91", "n": "India" },
+        { "c": "974", "n": "Qatar" }, { "c": "965", "n": "Kuwait" }, { "c": "968", "n": "Oman" }, { "c": "973", "n": "Bahrain" }
+      ],
+      "designTitle": "Design", "lblFg": "QR colour", "lblBg": "Background colour", "lblLogo": "Logo in the centre (optional)",
+      "hint": "Keep the QR dark and the background light so it scans easily, and keep any logo small and simple.",
+      "lowContrast": "The two colours are too similar and the QR may not scan. Pick a dark and a light colour.",
+      "tooLong": "The text is too long for a QR code. Please shorten it.",
+      "dlPng": "Download PNG", "dlJpg": "Download JPG", "print": "🖨️ Print poster", "paperLbl": "Paper size",
+      "empty": "Type the details to see the QR", "blank": "Your name",
+      "posterPay": "Account details", "scanPay": "Scan the QR to see the details", "poster": "Scan the QR code",
+      "popup": "Allow pop-ups to print the poster",
+      "kindsTitle": "Types of QR code",
+      "kinds": [
+        { "t": "Account details", "d": "Name, bank and account number as plain text, so a customer can scan, read and copy them." },
+        { "t": "WhatsApp", "d": "Scanning opens a chat with your number, optionally with a ready message." },
+        { "t": "Wi-Fi", "d": "A guest joins the network by scanning, without typing the password (some older phones cannot read it)." },
+        { "t": "vCard", "d": "Scanning saves your name, number and email as a contact on the phone." },
+        { "t": "Link / text", "d": "A website, social page or any text." }
+      ],
+      "howTitle": "How to make a QR code",
+      "how": [
+        "Choose the type of QR at the top.",
+        "Fill in the details; the QR changes as you type.",
+        "Change the colours and add a logo if you like.",
+        "Download PNG or JPG, or print a poster.",
+        "Scan it with your phone camera to check it before using it."
+      ],
+      "faqTitle": "QR code FAQ",
+      "faq": [
+        { "q": "Will the QR code keep working forever?", "a": "Yes. It is a simple QR that contains only what you typed. It has no expiry and is not tied to our site." },
+        { "q": "Does my information or Wi-Fi password go anywhere?", "a": "No. The QR is made in your browser and we store nothing. But anyone who has the QR image can read what is in it, so share a password QR carefully." },
+        { "q": "Is this an official bank payment QR?", "a": "No. The “Account details” QR only shows what you typed. For an official payment QR, contact your bank." },
+        { "q": "Why does my QR not scan?", "a": "Scanning is harder if the colours are too similar, the logo is large or the text is very long. Keep the QR dark and the background light." }
+      ]
+    }
+  }
+}

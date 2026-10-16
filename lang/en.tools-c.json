@@ -1,0 +1,47 @@
+{
+  "pages": {
+    "tasbih-counter": {
+      "title": "Online Tasbeeh Counter | Digital Tasbeeh, Masnoon Duas and Wazaif | Mufeed Tools",
+      "description": "Free digital tasbeeh counter for your phone: 33, 99, 100 or free target, today's total and a keep-screen-awake option. With masnoon duas and their sources.",
+      "h1": "Online Tasbeeh Counter",
+      "crumb": "Tasbeeh counter",
+      "lead": "Keep tapping and the count rises by itself. Choose a target of 33, 99, 100 or free. Your count stays only on your phone.",
+      "tabCounter": "Tasbeeh counter", "tabDuas": "Masnoon duas", "tabWazaif": "Wazaif",
+      "tap": "Tap to count", "lblTarget": "Target",
+      "targets": [ { "v": "100", "n": "100 times" }, { "v": "33", "n": "33 times" }, { "v": "99", "n": "99 times" }, { "v": "0", "n": "Free (no limit)" } ],
+      "reset": "Reset", "next": "Next dhikr ➔", "wake": "Keep screen awake", "todayLbl": "Today's total:",
+      "note": "The count is saved in your browser only. The keep-screen-awake button does not work on every phone.",
+      "duasIntro": "A few well-known masnoon duas with meaning and source. To confirm the Arabic text, check a reliable book such as Hisn al-Muslim.",
+      "duas": [
+        { "t": "1. On waking up", "ar": "اَلْحَمْدُ لِلّٰهِ الَّذِيْ أَحْيَانَا بَعْدَ مَا أَمَاتَنَا وَإِلَيْهِ النُّشُوْرُ", "tr": "All praise is for Allah who gave us life after causing us to die (sleep), and to Him is the resurrection.", "src": "Source: Sahih al-Bukhari" },
+        { "t": "2. Before sleeping", "ar": "بِاسْمِكَ اللّٰهُمَّ أَمُوْتُ وَأَحْيَا", "tr": "In Your name, O Allah, I die (sleep) and I live (wake).", "src": "Source: Sahih al-Bukhari" },
+        { "t": "3. Leaving the house", "ar": "بِسْمِ اللّٰهِ تَوَكَّلْتُ عَلَى اللّٰهِ، لَا حَوْلَ وَلَا قُوَّةَ إِلَّا بِاللّٰهِ", "tr": "In the name of Allah, I place my trust in Allah; there is no might or power except with Allah.", "src": "Source: Sunan Abi Dawud, Jami at-Tirmidhi" },
+        { "t": "4. Before eating", "ar": "بِسْمِ اللّٰهِ", "tr": "In the name of Allah (I begin).", "src": "Source: Sunan Abi Dawud, Jami at-Tirmidhi" },
+        { "t": "5. After eating", "ar": "اَلْحَمْدُ لِلّٰهِ الَّذِيْ أَطْعَمَنَا وَسَقَانَا وَجَعَلَنَا مُسْلِمِيْنَ", "tr": "All praise is for Allah who fed us, gave us drink and made us Muslims.", "src": "Source: Sunan Abi Dawud, Jami at-Tirmidhi" },
+        { "t": "6. Entering the mosque", "ar": "اَللّٰهُمَّ افْتَحْ لِيْ أَبْوَابَ رَحْمَتِكَ", "tr": "O Allah, open for me the doors of Your mercy.", "src": "Source: Sahih Muslim" },
+        { "t": "7. Leaving the mosque", "ar": "اَللّٰهُمَّ إِنِّيْ أَسْأَلُكَ مِنْ فَضْلِكَ", "tr": "O Allah, I ask You for Your bounty.", "src": "Source: Sahih Muslim" },
+        { "t": "8. Dua for travel", "ar": "سُبْحَانَ الَّذِيْ سَخَّرَ لَنَا هٰذَا وَمَا كُنَّا لَهُ مُقْرِنِيْنَ وَإِنَّا إِلٰى رَبِّنَا لَمُنْقَلِبُوْنَ", "tr": "Glory to Him who has subjected this to us, and we could not have subdued it ourselves; and to our Lord we shall surely return.", "src": "Source: Quran (Az-Zukhruf 13–14), Sahih Muslim" }
+      ],
+      "wazaifIntro": "Well-known adhkar and Quranic supplications. Their virtue is only what the source states; please do not attribute more to them.",
+      "wazaif": [
+        { "t": "1. Dua in distress and worry", "ar": "لَّا إِلٰهَ إِلَّا أَنتَ سُبْحَانَكَ إِنِّي كُنتُ مِنَ الظَّالِمِينَ", "tr": "There is no god but You, glory be to You; truly I have been among the wrongdoers.", "src": "Source: Quran (Al-Anbiya 87). A hadith in Tirmidhi says that when a Muslim makes this dua for anything, Allah answers it." },
+        { "t": "2. Hasbunallah", "ar": "حَسْبُنَا اللّٰهُ وَنِعْمَ الْوَكِيْلُ", "tr": "Allah is sufficient for us, and He is the best disposer of affairs.", "src": "Source: Quran (Aal Imran 173)." },
+        { "t": "3. La hawla wa la quwwata", "ar": "لَا حَوْلَ وَلَا قُوَّةَ إِلَّا بِاللّٰهِ", "tr": "There is no might and no power except with Allah.", "src": "Source: Sahih al-Bukhari, Sahih Muslim. A hadith calls it one of the treasures of Paradise." }
+      ],
+      "howTitle": "How to use the tasbeeh counter",
+      "how": [
+        "Choose a target: 33, 99, 100 or free.",
+        "Tap the big button each time you say the dhikr.",
+        "When the target is reached the tool tells you and moves to the next dhikr by itself.",
+        "For the after-prayer tasbeeh (SubhanAllah 33, Alhamdulillah 33, Allahu Akbar 34) choose a target of 33. For the third dhikr switch the target to “Free” to count up to 34."
+      ],
+      "faqTitle": "Tasbeeh FAQ",
+      "faq": [
+        { "q": "How many times should I do tasbeeh?", "a": "There is no single limit. The after-prayer tasbeeh (33, 33 and 34) is reported in a hadith; other adhkar can be said as much as you are able." },
+        { "q": "Is my count saved?", "a": "Yes, in your phone's browser. It is erased if you clear the browser's data." },
+        { "q": "What if the keep-screen-awake button does not work?", "a": "This feature is not available in every browser. In that case, increase the screen timeout in your phone settings." },
+        { "q": "Are these duas authentic?", "a": "Each dua has its source written beside it. For peace of mind, confirm it in Hisn al-Muslim or with a scholar." }
+      ]
+    }
+  }
+}

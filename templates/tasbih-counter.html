@@ -1,0 +1,54 @@
+<div class="wrap">
+  {{crumbs}}
+  <h1>{{page.h1}}</h1>
+  <p class="lead">{{page.lead}}</p>
+  {{toolTabs}}
+
+  <section class="panel" id="tool-tasbeeh">
+    <div class="tabs" role="tablist">
+      <button type="button" role="tab" data-tab="counter" aria-selected="true">{{page.tabCounter}}</button>
+      <button type="button" role="tab" data-tab="duas" aria-selected="false">{{page.tabDuas}}</button>
+      <button type="button" role="tab" data-tab="wazaif" aria-selected="false">{{page.tabWazaif}}</button>
+    </div>
+
+    <div data-panel="counter" role="tabpanel">
+      <div class="zikr" id="tasbeeh-name" lang="ar" dir="rtl">سُبْحَانَ اللّٰهِ</div>
+      <div class="count" id="count">0</div>
+      <button type="button" class="tap" id="tap">{{page.tap}}</button>
+      <div class="field"><label for="target">{{page.lblTarget}}</label>
+        <select id="target">
+          {{#each page.targets}}<option value="{{this.v}}">{{this.n}}</option>
+          {{/each}}
+        </select></div>
+      <div class="btn-row">
+        <button type="button" class="btn ghost" id="reset">{{page.reset}}</button>
+        <button type="button" class="btn ghost" id="next">{{page.next}}</button>
+        <button type="button" class="btn ghost" id="wake" aria-pressed="false">{{page.wake}}</button>
+      </div>
+      <p class="note">{{page.todayLbl}} <strong id="today-total">0</strong></p>
+      <p class="note">{{page.note}}</p>
+    </div>
+
+    <div data-panel="duas" role="tabpanel" hidden>
+      <p class="note">{{page.duasIntro}}</p>
+      {{#each page.duas}}<div class="panel"><h3>{{this.t}}</h3><p class="arabic" lang="ar">{{this.ar}}</p><p>{{this.tr}}</p><p class="note">{{this.src}}</p></div>
+      {{/each}}
+    </div>
+
+    <div data-panel="wazaif" role="tabpanel" hidden>
+      <p class="note">{{page.wazaifIntro}}</p>
+      {{#each page.wazaif}}<div class="panel"><h3>{{this.t}}</h3><p class="arabic" lang="ar">{{this.ar}}</p><p>{{this.tr}}</p><p class="note">{{this.src}}</p></div>
+      {{/each}}
+    </div>
+  </section>
+
+  <h2>{{page.howTitle}}</h2>
+  <ol class="prose">
+    {{#each page.how}}<li>{{this}}</li>
+    {{/each}}
+  </ol>
+
+  <h2>{{page.faqTitle}}</h2>
+  {{#each page.faq}}<details><summary>{{this.q}}</summary><div><p>{{this.a}}</p></div></details>
+  {{/each}}
+</div>

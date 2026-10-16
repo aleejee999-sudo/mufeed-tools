@@ -1,0 +1,46 @@
+{
+  "pages": {
+    "about": {
+      "title": "About | Mufeed Tools",
+      "description": "About Mufeed Tools: free online tools in Urdu, Arabic and English: jantri, age calculator, WhatsApp direct, tasbeeh counter, unit converter and QR codes.",
+      "h1": "About Mufeed Tools",
+      "crumb": "About",
+      "lead": "Mufeed Tools is a site of free online tools for Urdu, Arabic and English speakers. The aim is for everyday small jobs to take a few seconds on your phone.",
+      "sections": [
+        { "h": "Our tools", "body": "<ul><li><a href='/en/'>Today's date and jantri:</a> Gregorian, Hijri and Desi dates, moon phases and special days.</li><li><a href='/en/horoscope'>Horoscope and fortune:</a> your zodiac sign from your date of birth (for fun only).</li><li><a href='/en/age-calculator'>Age calculator:</a> years, months, days and next birthday, on any date.</li><li><a href='/en/whatsapp-direct'>WhatsApp direct:</a> open a chat without saving the number, or create a link.</li><li><a href='/en/tasbih-counter'>Tasbeeh counter:</a> digital tasbeeh, masnoon duas and wazaif.</li><li><a href='/en/unit-converter'>Unit converter and plot area:</a> feet, inches, yards, marla and kanal.</li><li><a href='/en/qr-code'>QR code generator:</a> links, WhatsApp, Wi-Fi and vCards.</li></ul>" },
+        { "h": "Our principles", "body": "<ul><li>Every tool is free and needs no sign-up.</li><li>What you type stays in your browser. Details are in the <a href='/en/privacy'>privacy policy</a>.</li><li>Where a result is for fun or an estimate, we say so clearly.</li></ul>" },
+        { "h": "Important notes", "body": "<ul><li>The horoscope and fortune are for fun only.</li><li>The jantri is traditional information. The Hijri date follows the Saudi (Umm al-Qura) calendar and can differ by a day from moon sighting in your country.</li><li>Plot area is approximate. For legal matters rely on a licensed surveyor.</li><li>Each dua and wird shows its source, but please check the Arabic text in a reliable book or with a scholar.</li><li>The “Account details” tab of the QR tool is not an official payment QR.</li></ul>" },
+        { "h": "A mistake or suggestion", "body": "<p>If you spot a mistake or would like a new tool, write to us from the <a href='/en/contact'>contact</a> page.</p>" }
+      ]
+    },
+    "contact": {
+      "title": "Contact | Mufeed Tools",
+      "description": "Contact Mufeed Tools with a question, suggestion or to report a mistake, by email or WhatsApp.",
+      "h1": "Contact us",
+      "crumb": "Contact",
+      "lead": "If you have a question, a suggestion or a mistake to report, write to us. We try to reply to every message, though it may take some time.",
+      "sections": [
+        { "h": "Email", "body": "<p dir='ltr'><a class='mail' data-u='alee.jee999' data-d='gmail.com'></a></p><script>document.querySelectorAll('a.mail').forEach(function(a){var m=a.dataset.u+'@'+a.dataset.d;a.href='mailto:'+m;a.textContent=m;});</script>" },
+        { "h": "WhatsApp", "body": "<p><a href='https://wa.me/923005308558' target='_blank' rel='noopener'>Send a message on WhatsApp</a></p>" },
+        { "h": "What to write about", "body": "<ul><li>A mistake in a tool (please give the page name and your phone model).</li><li>A suggestion for a new tool.</li><li>A translation correction.</li></ul>" },
+        { "h": "A caution", "body": "<p>We will never ask you for a password, an OTP or bank details. If a message like that arrives in our name, ignore it.</p>" }
+      ]
+    },
+    "privacy": {
+      "title": "Privacy Policy | Mufeed Tools",
+      "description": "How Mufeed Tools handles your information, what is saved in your browser, cookies and third-party services.",
+      "h1": "Privacy Policy",
+      "crumb": "Privacy policy",
+      "lead": "Your privacy matters to us. This page explains how information is used on this site. Last updated: 14 October 2026.",
+      "sections": [
+        { "h": "What you type", "body": "<p>The names, dates of birth, phone numbers, measurements, messages and QR details you type into the tools are used inside your browser only. We do not store them on our servers. The WhatsApp tool only builds or opens a wa.me link.</p>" },
+        { "h": "What is saved in your browser", "body": "<ul><li><b>Language:</b> when you click a language button, your choice is saved for a year in a cookie (<span dir='ltr'>site_lang</span>).</li><li><b>Tasbeeh:</b> your count, target and today's total.</li><li><b>Jantri:</b> the Hijri date adjustment.</li></ul><p>These stay on your own device only and are erased when you clear the browser's data.</p>" },
+        { "h": "Language by country", "body": "<p>When you first open the site's main address, the hosting service (Vercel) works out your country from your IP so that a suitable language opens. We do not keep it. You can always change the language yourself.</p>" },
+        { "h": "Third-party services", "body": "<ul><li><b>Vercel:</b> hosting of the site and general page-traffic counts (Vercel Analytics). As with any website, the host may log IP addresses and browser details.</li><li><b>Google Fonts:</b> when fonts load, Google may receive your IP address.</li><li><b>jsDelivr:</b> the QR-making library comes from here, on the QR page only.</li></ul><p>Each has its own privacy policy.</p>" },
+        { "h": "Advertising", "body": "<p>There are currently no ads on this site. If we add any in future, we will update this page first and add the required consent system.</p>" },
+        { "h": "External links and children", "body": "<p>The site has share links to WhatsApp and Facebook, each with its own policy. The site is not aimed specifically at children under 13.</p>" },
+        { "h": "Contact", "body": "<p>If you have a question about this policy, write to us from the <a href='/en/contact'>contact</a> page. If the policy changes, we will change the date above.</p>" }
+      ]
+    }
+  }
+}

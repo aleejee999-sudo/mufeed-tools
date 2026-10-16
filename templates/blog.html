@@ -1,0 +1,9 @@
+<div class="wrap">
+  {{crumbs}}
+  <h1>{{page.h1}}</h1>
+  <p class="lead">{{page.lead}}</p>
+  <div class="posts">
+    {{#each page.posts}}<a href="/{{lang}}/blog/{{this.slug}}"><h2>{{this.t}}</h2><p>{{this.d}}</p></a>
+    {{/each}}
+  </div>
+</div>

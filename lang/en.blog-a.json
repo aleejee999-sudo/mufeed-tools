@@ -1,0 +1,46 @@
+{
+  "pages": {
+    "blog": {
+      "title": "Blog | Mufeed Tools",
+      "description": "Simple guides to our free tools: age calculator, WhatsApp direct, zodiac sign, tasbeeh counter, unit converter and QR codes.",
+      "h1": "Blog",
+      "crumb": "Blog",
+      "lead": "Easy ways to use our free tools.",
+      "posts": [
+        { "slug": "unit-converter", "t": "How to convert cm to feet and inches and plot area to marla", "d": "A simple way to convert heights and plot measurements between units." },
+        { "slug": "horoscope", "t": "How to find your zodiac sign", "d": "Find your sign from your date of birth, with the dates of all twelve signs." },
+        { "slug": "age-calculator", "t": "How to calculate your age online", "d": "Your age in years, months and days, and your age on a particular date." },
+        { "slug": "whatsapp-direct", "t": "How to message on WhatsApp without saving the number", "d": "The right way to write a number with its country code, step by step." },
+        { "slug": "tasbeeh-counter", "t": "How to use an online tasbeeh counter", "d": "Counting tasbeeh on your phone, with targets of 33, 99 and 100." },
+        { "slug": "qr-code", "t": "QR code guide: scanning, account details and printing for a shop", "d": "How to scan a QR code and how to print a poster for your shop." }
+      ]
+    },
+    "blog/age-calculator": {
+      "title": "How to Calculate Your Age Online | Mufeed Tools",
+      "description": "A simple way to find your age in years, months and days from your date of birth, on today's date or any date, with an example.",
+      "h1": "How to calculate your age online",
+      "date": "2026-10-14",
+      "meta": "Reading time: 3 minutes · 14 October 2026",
+      "body": "<p>Sometimes we need to know our exact age: for a government job application, a school admission or a form. Counting years, months and days by hand is not easy, especially when months have different lengths. Our <a href='/en/age-calculator'>age calculator</a> does it in seconds.</p><h2>Steps to find your age</h2><ol><li>Choose your date of birth.</li><li>The second box already holds today's date; leave it as it is.</li><li>Press “Calculate age”.</li><li>Your age appears in years, months and days.</li></ol><h2>Age on a particular date</h2><p>A job notice often says your age must fall within a range by the closing date. In that case you need your age on that date, not today. Type that date into the second box.</p><h2>An example</h2><p>Suppose you were born on 15 March 2000 and want your age on 1 January 2027. The result is 26 years, 9 months and 17 days.</p><h2>What else you get</h2><ul><li>Total days, weeks and hours</li><li>Your approximate age in Hijri (lunar) years</li><li>Days left until your next birthday and the weekday it falls on</li></ul><h2>One important note</h2><p>The tool gives a straight Gregorian-calendar result. If an organisation has a special rule for counting age, check it in the notice.</p>",
+      "ctaText": "Find your age now, completely free.", "ctaBtn": "Open the age calculator", "ctaSlug": "age-calculator"
+    },
+    "blog/whatsapp-direct": {
+      "title": "How to Message on WhatsApp Without Saving the Number | Mufeed Tools",
+      "description": "How to start a WhatsApp chat without saving a number and how to create a wa.me link, with the country code written correctly.",
+      "h1": "How to message on WhatsApp without saving the number",
+      "date": "2026-10-14",
+      "meta": "Reading time: 3 minutes · 14 October 2026",
+      "body": "<p>Sometimes you need to message a shopkeeper, a delivery rider or a stranger just once and do not want their number in your contacts. The <a href='/en/whatsapp-direct'>WhatsApp direct</a> tool does it in seconds.</p><h2>How to write the number</h2><p>WhatsApp needs the number with its country code, and the leading zero must be dropped. Pakistan's code is 92.</p><ul><li>Usual number: 0300 1234567</li><li>For WhatsApp: 92 300 1234567</li></ul><p>In our tool, choose the country and type the number as it is; the tool removes the leading zero for you.</p><h2>Steps</h2><ol><li>Choose the country, for example Pakistan (+92).</li><li>Type the mobile number.</li><li>Write a ready message if you like.</li><li>Press “Open chat in WhatsApp”.</li></ol><h2>Create a link and share it</h2><p>The tool also builds a <span dir='ltr'>wa.me</span> link, such as <span dir='ltr'>https://wa.me/923001234567</span>. Copy it and put it on your shop page or bio so customers can start a chat with one tap.</p><h2>Cautions</h2><ul><li>The chat will not open if the number is not on WhatsApp.</li><li>Do not put personal details in messages to people you do not know.</li><li>Our site is not affiliated with WhatsApp.</li></ul>",
+      "ctaText": "Try it now, no need to save the number.", "ctaBtn": "Open the WhatsApp tool", "ctaSlug": "whatsapp-direct"
+    },
+    "blog/horoscope": {
+      "title": "How to Find Your Zodiac Sign | Dates of the Twelve Signs | Mufeed Tools",
+      "description": "A simple way to find your zodiac sign from your date of birth, with the dates of all twelve signs. Horoscopes are for fun only.",
+      "h1": "How to find your zodiac sign",
+      "date": "2026-10-14",
+      "meta": "Reading time: 2 minutes · 14 October 2026",
+      "body": "<p>Your sign depends on your date of birth. The year is divided into twelve parts, each with a sign. If you do not know yours, the <a href='/en/horoscope'>horoscope tool</a> works it out from your date of birth.</p><h2>Steps to find your sign</h2><ol><li>Type your name.</li><li>Choose your date of birth.</li><li>Press “Show my sign and fortune”.</li><li>Your sign appears with a playful reading.</li></ol><h2>Dates of the signs</h2><ul><li>Aries: 21 March to 19 April</li><li>Taurus: 20 April to 20 May</li><li>Gemini: 21 May to 20 June</li><li>Cancer: 21 June to 22 July</li><li>Leo: 23 July to 22 August</li><li>Virgo: 23 August to 22 September</li><li>Libra: 23 September to 22 October</li><li>Scorpio: 23 October to 21 November</li><li>Sagittarius: 22 November to 21 December</li><li>Capricorn: 22 December to 19 January</li><li>Aquarius: 20 January to 18 February</li><li>Pisces: 19 February to 20 March</li></ul><h2>How is the reading made?</h2><p>The tool picks from ready-written playful lines using a simple rule based on the length of your name and your date. There is no astronomical calculation.</p><h2>An important note</h2><p>Your sign is fixed by your date of birth, but the fortune is for fun only. No one can truly foretell the future, so please do not base a decision, business move or relationship on it.</p>",
+      "ctaText": "Find your sign now, completely free.", "ctaBtn": "Open the horoscope tool", "ctaSlug": "horoscope"
+    }
+  }
+}

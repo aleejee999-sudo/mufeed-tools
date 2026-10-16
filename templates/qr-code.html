@@ -1,0 +1,104 @@
+<div class="wrap">
+  {{crumbs}}
+  <h1>{{page.h1}}</h1>
+  <p class="lead">{{page.lead}}</p>
+  {{toolTabs}}
+
+  <p class="warn" id="qr-fallback" hidden>{{page.libFail}}</p>
+
+  <section class="panel" id="tool-qr" data-blank="{{page.blank}}" data-empty="{{page.empty}}" data-poster="{{page.poster}}" data-poster-pay="{{page.posterPay}}" data-scan-pay="{{page.scanPay}}" data-popup="{{page.popup}}">
+    <div class="tabs" id="qr-types" role="tablist">
+      {{#each page.types}}<button type="button" role="tab" data-k="{{this.k}}" aria-selected="false">{{this.n}}</button>
+      {{/each}}
+    </div>
+
+    <div class="qr-forms">
+      <div data-form="pay">
+        <p class="warn">{{page.payWarn}}</p>
+        <div class="field"><label for="qp-title">{{page.lblBankTitle}}</label><input type="text" id="qp-title" autocomplete="off"></div>
+        <div class="field"><label for="qp-bank">{{page.lblBank}}</label><input type="text" id="qp-bank" autocomplete="off"></div>
+        <div class="field"><label for="qp-iban">{{page.lblIban}}</label><input type="text" id="qp-iban" class="ltr" autocomplete="off"></div>
+      </div>
+
+      <div data-form="wa" hidden>
+        <div class="qr-phone-row">
+          <div class="field"><label for="qw-cc">{{page.lblCc}}</label><select id="qw-cc">
+            {{#each page.countries}}<option value="{{this.c}}">{{this.n}} (+{{this.c}})</option>
+            {{/each}}
+          </select></div>
+          <div class="field"><label for="qw-num">{{page.lblPhone}}</label><input type="tel" id="qw-num" class="ltr" inputmode="tel" autocomplete="off"></div>
+        </div>
+        <div class="field"><label for="qw-msg">{{page.lblWaMsg}}</label><textarea id="qw-msg"></textarea></div>
+      </div>
+
+      <div data-form="wifi" hidden>
+        <div class="field"><label for="qf-ssid">{{page.lblSsid}}</label><input type="text" id="qf-ssid" class="ltr" autocomplete="off"></div>
+        <div class="field"><label for="qf-pass">{{page.lblPass}}</label><input type="text" id="qf-pass" class="ltr" autocomplete="off"></div>
+        <div class="field"><label for="qf-sec">{{page.lblSec}}</label><select id="qf-sec">
+          {{#each page.secOpts}}<option value="{{this.v}}">{{this.n}}</option>
+          {{/each}}
+        </select></div>
+      </div>
+
+      <div data-form="vcard" hidden>
+        <div class="field"><label for="qv-name">{{page.lblName}}</label><input type="text" id="qv-name" autocomplete="off"></div>
+        <div class="field"><label for="qv-org">{{page.lblOrg}}</label><input type="text" id="qv-org" autocomplete="off"></div>
+        <div class="qr-phone-row">
+          <div class="field"><label for="qv-cc">{{page.lblCc}}</label><select id="qv-cc">
+            {{#each page.countries}}<option value="{{this.c}}">{{this.n}} (+{{this.c}})</option>
+            {{/each}}
+          </select></div>
+          <div class="field"><label for="qv-phone">{{page.lblPhone}}</label><input type="tel" id="qv-phone" class="ltr" inputmode="tel" autocomplete="off"></div>
+        </div>
+        <div class="field"><label for="qv-email">{{page.lblEmail}}</label><input type="email" id="qv-email" class="ltr" autocomplete="off"></div>
+        <div class="field"><label for="qv-addr">{{page.lblAddr}}</label><input type="text" id="qv-addr" autocomplete="off"></div>
+      </div>
+
+      <div data-form="text" hidden>
+        <div class="field"><label for="qt-text">{{page.lblText}}</label><textarea id="qt-text" class="ltr"></textarea></div>
+      </div>
+    </div>
+
+    <div class="qr-design">
+      <h2>{{page.designTitle}}</h2>
+      <div class="row2">
+        <div class="field"><label for="qr-fg">{{page.lblFg}}</label><input type="color" id="qr-fg" value="#0f4c45"></div>
+        <div class="field"><label for="qr-bg">{{page.lblBg}}</label><input type="color" id="qr-bg" value="#ffffff"></div>
+      </div>
+      <div class="field"><label for="qr-logo">{{page.lblLogo}}</label><input type="file" id="qr-logo" accept="image/*"></div>
+      <p class="note">{{page.hint}}</p>
+      <p class="warn" id="qr-contrast" hidden>{{page.lowContrast}}</p>
+      <p class="warn" id="qr-error" hidden>{{page.tooLong}}</p>
+    </div>
+
+    <div class="qr-phone" aria-live="polite">
+      <div class="qr-title" id="pv-title"></div>
+      <div class="qr-sub" id="pv-sub"></div>
+      <div class="qr-canvas empty" id="qr-canvas"></div>
+      <div class="qr-meta" id="pv-meta"></div>
+    </div>
+
+    <div class="qr-actions">
+      <button type="button" class="btn" id="qr-dl-png">{{page.dlPng}}</button>
+      <button type="button" class="btn ghost" id="qr-dl-jpg">{{page.dlJpg}}</button>
+      <button type="button" class="btn alt" id="qr-print">{{page.print}}</button>
+      <select id="qr-paper" aria-label="{{page.paperLbl}}"><option>A4</option><option>A5</option></select>
+    </div>
+  </section>
+
+  <h2>{{page.kindsTitle}}</h2>
+  <ul class="kinds prose">
+    {{#each page.kinds}}<li><b>{{this.t}}:</b> {{this.d}}</li>
+    {{/each}}
+  </ul>
+
+  <h2>{{page.howTitle}}</h2>
+  <ol class="prose">
+    {{#each page.how}}<li>{{this}}</li>
+    {{/each}}
+  </ol>
+
+  <h2>{{page.faqTitle}}</h2>
+  {{#each page.faq}}<details><summary>{{this.q}}</summary><div><p>{{this.a}}</p></div></details>
+  {{/each}}
+</div>

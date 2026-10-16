@@ -1,0 +1,41 @@
+{
+  "site": {
+    "brand": "Mufeed Tools", "mark": "M", "skip": "Skip to content", "navLabel": "Main menu", "toolsLabel": "Tools",
+    "nav": { "home": "Home", "blog": "Blog", "about": "About", "contact": "Contact" },
+    "footer": { "about": "About", "contact": "Contact", "privacy": "Privacy policy" }
+  },
+  "tools": {
+    "horoscope": { "name": "Horoscope & fortune", "desc": "Find your zodiac sign from your date of birth (for fun only)" },
+    "age-calculator": { "name": "Age calculator", "desc": "Years, months, days and next birthday, on any date" },
+    "whatsapp-direct": { "name": "WhatsApp direct", "desc": "Open a chat without saving the number, or create a link" },
+    "tasbih-counter": { "name": "Tasbeeh counter", "desc": "Digital tasbeeh, masnoon duas and wazaif" },
+    "unit-converter": { "name": "Unit converter & plot area", "desc": "Feet, inches, yards, marla and kanal" },
+    "qr-code": { "name": "QR code generator", "desc": "QR for links, WhatsApp, Wi-Fi and vCards" }
+  },
+  "pages": {
+    "index": {
+      "title": "Mufeed Tools | Today's Hijri Date, Jantri, Age Calculator & More",
+      "description": "Today's Gregorian, Hijri and Desi date, daily jantri, age calculator, WhatsApp direct chat, tasbeeh counter, unit converter and QR code generator. All free.",
+      "h1": "Mufeed Tools: Today's Date, Jantri and Free Online Tools",
+      "lead": "Everyday jobs on your phone in seconds: check the date, work out your age, measure a plot, count your tasbeeh.",
+      "calLabel": "Today's date and jantri",
+      "calIntro": "Above you will find today's Gregorian, Hijri and Desi (Bikrami) date, moon phase, auspicious and inauspicious hours, zodiac sign and special days in one place. Tap a date to open the whole month.",
+      "toolsTitle": "Our free tools",
+      "whyTitle": "Why Mufeed Tools?",
+      "why": [
+        "Every tool is free and needs no sign-up.",
+        "The names, numbers and dates you type stay in your browser.",
+        "In Urdu, Arabic and English, built for phones.",
+        "Made with Pakistani needs in mind: marla, kanal, Desi months and the Hijri date."
+      ],
+      "faqTitle": "Frequently asked questions",
+      "faq": [
+        { "q": "What is today's Hijri date?", "a": "Today's Hijri date is shown in the box at the top of the home page. It follows the Saudi (Umm al-Qura) calendar, so it can differ by a day from moon sighting in your country; use the adjustment option to match it." },
+        { "q": "Are these tools free?", "a": "Yes, every tool is free and you do not need an account." },
+        { "q": "Is my data saved?", "a": "What you type into the tools is used inside your browser and is not stored on our servers. Details are in the privacy policy." },
+        { "q": "Are the horoscope and fortune readings real?", "a": "No, they are for fun only. Please do not base any decision on them." },
+        { "q": "Can I message a number on WhatsApp without saving it?", "a": "Yes. In the WhatsApp direct tool, choose the country code, type the number and open the chat." }
+      ]
+    }
+  }
+}
