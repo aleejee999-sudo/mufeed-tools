@@ -12,17 +12,19 @@
       <button type="button" class="cw-date" id="cw-d"></button>
       <button type="button" class="cw-date" id="cw-h"></button>
     </div>
-    <div class="cw-adj"><label for="cw-adj" id="cw-adj-l"></label> <select id="cw-adj"></select></div>
     <div class="cw-special" id="cw-special" hidden></div>
-    <h3 class="cw-sub" id="cw-jt"></h3>
-    <div class="cw-jantri" id="cw-jantri"></div>
-    <p class="cw-note" id="cw-note"></p>
-    <div class="cw-blog">
-      <h3 id="cw-bt"></h3>
-      <p id="cw-bp"></p>
-      <button type="button" class="cw-btn" id="cw-bb"></button>
-    </div>
-    <button type="button" class="cw-btn alt" id="cw-year"></button>
+    <details class="cw-more">
+      <summary id="cw-jt"></summary>
+      <div class="cw-adj"><label for="cw-adj" id="cw-adj-l"></label> <select id="cw-adj"></select></div>
+      <div class="cw-jantri" id="cw-jantri"></div>
+      <p class="cw-note" id="cw-note"></p>
+      <div class="cw-blog">
+        <h3 id="cw-bt"></h3>
+        <p id="cw-bp"></p>
+        <button type="button" class="cw-btn" id="cw-bb"></button>
+      </div>
+      <button type="button" class="cw-btn alt" id="cw-year"></button>
+    </details>
   </div>
   <div class="cw-modal" id="cw-modal" hidden>
     <div class="cw-box" role="dialog" aria-modal="true" aria-label="{{page.calLabel}}">

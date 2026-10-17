@@ -55,6 +55,15 @@
 .cw-grid .today small{color:var(--gold)}
 .cw-legend{font-size:.8rem;color:var(--muted);margin-block-start:8px;text-align:center}
 
+/* جنتری کی لمبی لسٹ بند رہتی ہے، ٹیپ پر کھلتی ہے */
+.cw-special{margin-block-end:10px}
+.cw-more{margin:0;border:0;border-radius:0;background:transparent;border-block-start:1px solid var(--line)}
+.cw-more>summary{padding:14px 16px;font-size:1.05rem;background:var(--green-soft);color:var(--green);border-block-end:0}
+.cw-more[open]>summary{border-block-end:1px solid var(--line)}
+.cw-more>div{padding:0}
+.cw-more>.cw-adj{padding-block-start:10px}
+.cw-more>.cw-jantri{margin-block-start:12px}
+
 @media (max-width:560px){
   .cw-dates{grid-template-columns:1fr}
   .cw-date{border-inline-end:0;border-block-end:1px solid var(--line)}
