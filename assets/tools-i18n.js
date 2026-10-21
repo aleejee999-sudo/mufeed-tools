@@ -1,4 +1,4 @@
-/* Mufeed Tools | tools-i18n.js | tools.js سے پہلے لوڈ کریں | UTF-8 */
+/* Mufeed Tools | tools-i18n.js | tools.js se pehle load karein | UTF-8 */
 window.TOOLS_I18N = {
   ur: {
     msg: {

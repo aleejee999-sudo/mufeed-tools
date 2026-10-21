@@ -1,4 +1,4 @@
-/* Mufeed Tools | tools.js | tools-i18n.js کے بعد لوڈ کریں | UTF-8 */
+/* Mufeed Tools | tools.js | tools-i18n.js ke baad load karein | UTF-8 */
 (function () {
   var LANG = document.documentElement.lang, I = (window.TOOLS_I18N || {})[LANG];
   if (!I) return;
@@ -191,4 +191,47 @@
   }
 
   /* ================= تسبیح ================= */
-  var Z = ['سُبْحَانَ اللّٰهِ', 'اَلْحَمْدُ لِلّٰهِ', 'اَللّٰهُ أَكْبَرُ', 'لَآ إِلٰهَ اِلَّا اللّٰهُ', 'أَسْتَغْفِرُ
+  var Z = ['سُبْحَانَ اللّٰهِ', 'اَلْحَمْدُ لِلّٰهِ', 'اَللّٰهُ أَكْبَرُ', 'لَآ إِلٰهَ اِلَّا اللّٰهُ', 'أَسْتَغْفِرُ اللّٰهَ', 'اَللّٰهُمَّ صَلِّ عَلٰى مُحَمَّدٍ'];
+  function initTasbeeh() {
+    if (!$('tool-tasbeeh')) return;
+    var s = store.get('mt_tasbeeh') || {}, zi = s.i >= 0 && s.i < Z.length ? s.i : 0, count = s.c >= 0 ? s.c : 0;
+    var target = [0, 33, 99, 100].indexOf(Number(s.t)) > -1 ? Number(s.t) : 100;
+    var day = store.get('mt_tasbeeh_day') || {}, todayKey = isoDate(new Date());
+    var today = day.d === todayKey ? day.n : 0, wake = null;
+    function save() { store.set('mt_tasbeeh', { i: zi, c: count, t: target }); store.set('mt_tasbeeh_day', { d: todayKey, n: today }); }
+    function draw() {
+      setText('tasbeeh-name', Z[zi]);
+      setText('count', count);
+      setText('today-total', today);
+      $('target').value = String(target);
+    }
+    function next() { count = 0; zi = (zi + 1) % Z.length; draw(); save(); }
+    $('tap').onclick = function () {
+      count++; today++;
+      if (navigator.vibrate) navigator.vibrate(15);
+      if (target > 0 && count >= target) { toast(fill(I.tasbeeh.done, { n: target })); next(); return; }
+      draw(); save();
+    };
+    $('reset').onclick = function () { count = 0; draw(); save(); };
+    $('next').onclick = next;
+    $('target').onchange = function () { target = Number($('target').value); count = 0; draw(); save(); };
+    var wb = $('wake');
+    if (wb) {
+      if (!('wakeLock' in navigator)) wb.hidden = true;
+      else wb.onclick = function () {
+        if (wake) { wake.release(); wake = null; wb.setAttribute('aria-pressed', 'false'); return; }
+        navigator.wakeLock.request('screen').then(function (l) { wake = l; wb.setAttribute('aria-pressed', 'true'); l.addEventListener('release', function () { wake = null; wb.setAttribute('aria-pressed', 'false'); }); }, function () {});
+      };
+    }
+    var tabs = document.querySelectorAll('.tabs [data-tab]');
+    tabs.forEach(function (b) {
+      b.addEventListener('click', function () {
+        tabs.forEach(function (x) { x.setAttribute('aria-selected', x === b ? 'true' : 'false'); });
+        document.querySelectorAll('[data-panel]').forEach(function (p) { p.hidden = p.getAttribute('data-panel') !== b.getAttribute('data-tab'); });
+      });
+    });
+    draw();
+  }
+
+  initHoroscope(); initAge(); initWhatsApp(); initConverter(); initPlot(); initTasbeeh();
+})();
