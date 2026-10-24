@@ -41,6 +41,14 @@
         { "h": "External links and children", "body": "<p>The site has share links to WhatsApp and Facebook, each with its own policy. The site is not aimed specifically at children under 13.</p>" },
         { "h": "Contact", "body": "<p>If you have a question about this policy, write to us from the <a href='/en/contact'>contact</a> page. If the policy changes, we will change the date above.</p>" }
       ]
+    },
+    "terms": {
+      "title": "Terms of Service | Mufeed Tools",
+      "description": "Terms of Service for Mufeed Tools: usage rules, accuracy of information and guidelines.",
+      "h1": "Terms of Service",
+      "crumb": "Terms of service",
+      "lead": "Please read these terms carefully before using our website and tools.",
+      "content": "<p>Welcome to <strong>Mufeed Tools</strong>. By accessing or using our website and utility tools, you agree to be bound by these Terms of Service.</p><h3>1. Use of Tools</h3><p>All online utilities (including Date Converters, Age Calculators, and Jantri) are provided for free for personal and informational use.</p><h3>2. Accuracy of Information</h3><p>While we strive for maximum accuracy, all calculations and outputs are provided 'as is' without warranty of any kind.</p><h3>3. Privacy Policy</h3><p>Your privacy is important to us. Please refer to our Privacy Policy for details on data handling.</p>"
     }
   }
 }

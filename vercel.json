@@ -15,6 +15,7 @@
     { "source": "/about.html", "destination": "/ur/about", "statusCode": 301 },
     { "source": "/contact.html", "destination": "/ur/contact", "statusCode": 301 },
     { "source": "/privacy.html", "destination": "/ur/privacy", "statusCode": 301 },
+    { "source": "/terms.html", "destination": "/ur/terms", "statusCode": 301 },
     { "source": "/blog-age-calculator.html", "destination": "/ur/blog/age-calculator", "statusCode": 301 },
     { "source": "/blog-tasbeeh-counter.html", "destination": "/ur/blog/tasbeeh-counter", "statusCode": 301 },
     { "source": "/blog-tasbeeh.html", "destination": "/ur/blog/tasbeeh-counter", "statusCode": 301 },
@@ -28,6 +29,8 @@
       "source": "/(.*)",
       "headers": [
         { "key": "X-Content-Type-Options", "value": "nosniff" },
+        { "key": "X-Frame-Options", "value": "DENY" },
+        { "key": "X-XSS-Protection", "value": "1; mode=block" },
         { "key": "Referrer-Policy", "value": "strict-origin-when-cross-origin" }
       ]
     }

@@ -26,7 +26,7 @@ const PAGES = [   // slug '' = ہوم۔ نیا صفحہ جوڑنا ہو تو ی�
   { slug: 'blog/horoscope', tpl: 'post', article: 1 }, { slug: 'blog/tasbeeh-counter', tpl: 'post', article: 1 },
   { slug: 'blog/unit-converter', tpl: 'post', article: 1 }, { slug: 'blog/qr-code', tpl: 'post', article: 1 },
   { slug: 'about', tpl: 'static' },
-  { slug: 'contact', tpl: 'static' }, { slug: 'privacy', tpl: 'static' }
+  { slug: 'contact', tpl: 'static' }, { slug: 'privacy', tpl: 'static' }, { slug: 'terms', tpl: 'static' }
 ];
 const FONTS = '<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>' +
   '<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Amiri:wght@400;700&family=Hanken+Grotesk:wght@400;600;700&family=Noto+Naskh+Arabic:wght@400;600;700&display=swap">';
@@ -82,17 +82,22 @@ function buildHead(lang, pg, L, P, here) {
   }) });
   const ld = JSON.stringify({ '@context': 'https://schema.org', '@graph': g }).replace(/</g, '\\u003c');
   const css = ['style.css'].concat(pg.css || []).map(function (f) { return '<link rel="stylesheet" href="/assets/' + f + '">'; }).join('\n');
-  return ['<meta charset="UTF-8">', '<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">',
-      '<meta name="google-site-verification" content="EnOSYniSj58XQJU7_bwSFXfugAVtEQQFtTamMLaXVmo">', 
+ return ['<meta charset="UTF-8">', '<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">',
+    '<meta name="google-site-verification" content="EnOSYniSj58XQJU7_bwSFXfugAVtEQQFtTamMLaXVmo">',
     '<title>' + esc(P.title) + '</title>', '<meta name="description" content="' + esc(P.description) + '">',
     '<link rel="canonical" href="' + self + '">', alts,
+    '<link rel="icon" type="image/png" sizes="128x128" href="/meetup (3).png">',
+    '<link rel="icon" type="image/png" sizes="256x256" href="/meetup (2).png">',
+    '<link rel="apple-touch-icon" sizes="512x512" href="/meetup (1).png">',
     '<meta property="og:type" content="website">', '<meta property="og:site_name" content="' + esc(L.site.brand) + '">',
     '<meta property="og:locale" content="' + META[lang].og + '">', '<meta property="og:title" content="' + esc(P.title) + '">',
     '<meta property="og:description" content="' + esc(P.description) + '">', '<meta property="og:url" content="' + self + '">',
-    '<meta name="twitter:card" content="summary">', '<meta name="theme-color" content="#0f4c45">',
+    '<meta property="og:image" content="https://mufeed-tools.vercel.app/OGimage.png">',
+    '<meta property="og:image:width" content="1200">',
+    '<meta property="og:image:height" content="630">',
+    '<meta name="twitter:card" content="summary_large_image">', '<meta name="theme-color" content="#0f4c45">',
     FONTS, css, '<script type="application/ld+json">' + ld + '</script>'].join('\n');
 }
-
 function rootPage(have) {
   const links = have.map(function (l) { return '<a class="btn block" href="/' + l + '/" hreflang="' + l + '" lang="' + l + '" dir="' + META[l].dir + '">' + META[l].name + '</a>'; }).join('');
   const alts = have.map(function (l) { return '<link rel="alternate" hreflang="' + l + '" href="' + SITE + '/' + l + '/">'; }).join('') + '<link rel="alternate" hreflang="x-default" href="' + SITE + '/">';
