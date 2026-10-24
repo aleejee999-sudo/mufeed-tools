@@ -1,0 +1,73 @@
+/* Mufeed Tools | calendar.css | style.css کے بعد لوڈ کریں | ur, ar, en */
+.cw-wrap{max-width:960px;margin:0 auto 6px;padding-inline:16px;width:100%}
+.cw-card{background:var(--card);border:1px solid var(--line);border-radius:10px;overflow:hidden;min-height:420px}
+
+/* اوپر کی پٹی: دن کا نام اور گھڑی */
+.cw-title{background:var(--green);color:#fff;font-size:1rem;font-weight:700;padding:10px 16px 0;text-align:center}
+.cw-clock{background:var(--green);color:var(--gold);font-size:2.6rem;font-weight:800;line-height:1.4;letter-spacing:2px;text-align:center;padding-block-end:10px;border-block-end:3px solid var(--gold);font-variant-numeric:tabular-nums}
+
+/* تین تاریخیں */
+.cw-dates{display:grid;grid-template-columns:repeat(3,1fr);gap:0;border-block-end:1px solid var(--line)}
+.cw-date{background:transparent;border:0;border-inline-end:1px solid var(--line);padding:12px 8px;font-size:1rem;font-weight:700;color:var(--ink);cursor:pointer;line-height:1.7;text-align:center}
+.cw-date:last-child{border-inline-end:0}
+.cw-date small{display:block;color:var(--green-2);font-size:.8rem;font-weight:700}
+.cw-date:hover{background:var(--green-soft)}
+
+.cw-adj{font-size:.85rem;color:var(--muted);padding:10px 16px 0;text-align:center}
+.cw-adj select,.cw-box select{min-height:36px;width:auto;padding:4px 8px;border:1px solid var(--line);border-radius:8px;background:var(--paper);color:var(--ink)}
+.cw-special{margin:10px 16px 0;background:var(--gold-soft);color:var(--ink);border:1px solid var(--gold);border-radius:8px;padding:8px 12px;font-weight:700;line-height:1.9}
+
+/* آج کی جنتری */
+.cw-sub{font-size:1.1rem;margin:14px 16px 6px;color:var(--green)}
+.cw-jantri{margin-inline:16px;border:1px solid var(--line);border-radius:8px;overflow:hidden}
+.cw-row{display:grid;grid-template-columns:minmax(96px,30%) 1fr;gap:10px;padding:8px 12px;border-block-end:1px solid var(--line);font-size:.95rem;line-height:1.9}
+.cw-row:last-child{border-block-end:0}
+.cw-row:nth-child(even){background:var(--paper)}
+.cw-row b{color:var(--green)}
+.cw-row span{min-width:0}
+.cw-note{font-size:.8rem;color:var(--muted);margin:10px 16px 0;line-height:1.8}
+
+/* آج کا بلاگ اور سالانہ جنتری */
+.cw-blog{margin:14px 16px 10px;padding:12px 14px;background:var(--green-soft);border-inline-start:4px solid var(--green-2);border-radius:8px}
+.cw-blog h3{font-size:1.05rem;color:var(--green);margin:0 0 4px}
+.cw-blog p{line-height:2;margin-block-end:8px}
+.cw-btn{display:inline-flex;align-items:center;min-height:44px;padding:8px 20px;border:0;border-radius:10px;background:var(--green);color:#fff;font-size:.95rem;font-weight:700;cursor:pointer}
+.cw-btn:hover{background:var(--green-2)}
+.cw-btn.alt{display:flex;justify-content:center;width:calc(100% - 32px);margin:0 16px 16px;background:var(--gold);color:#2a1d00}
+
+/* پاپ اپ کیلنڈر */
+.cw-modal{position:fixed;inset:0;background:rgba(10,24,21,.6);display:flex;align-items:center;justify-content:center;padding:14px;z-index:200}
+.cw-box{position:relative;background:var(--card);color:var(--ink);border-radius:12px;width:100%;max-width:480px;max-height:88vh;overflow:auto;padding:30px 14px 16px;text-align:start}
+.cw-x{position:absolute;inset-block-start:8px;inset-inline-start:8px;width:36px;height:36px;border:1px solid var(--line);border-radius:50%;background:var(--card);color:var(--ink);cursor:pointer;font-size:1rem}
+.cw-ch{display:flex;justify-content:space-between;align-items:center;margin-block-end:6px}
+.cw-ch strong{color:var(--green)}
+.cw-ch button{width:40px;height:40px;border:1px solid var(--line);border-radius:50%;background:var(--card);color:var(--green);font-size:1.3rem;cursor:pointer}
+[dir=ltr] .cw-ch button[data-n="-1"]{transform:scaleX(-1)}
+[dir=ltr] .cw-ch button[data-n="1"]{transform:scaleX(-1)}
+.cw-sm{font-size:.82rem;color:var(--muted);text-align:center;line-height:1.8;margin-block-end:8px}
+.cw-grid{display:grid;grid-template-columns:repeat(7,1fr);gap:4px;text-align:center}
+.cw-grid b{font-size:.75rem;color:var(--muted)}
+.cw-grid span{border:1px solid var(--line);border-radius:6px;padding:4px 0;font-weight:700;line-height:1.4}
+.cw-grid span small{display:block;font-size:.75rem;font-weight:400;color:var(--muted)}
+.cw-grid .fri{color:var(--green-2)}
+.cw-grid .ev{border-color:var(--gold);box-shadow:inset 0 -3px 0 var(--gold)}
+.cw-grid .today{background:var(--green);color:#fff;border-color:var(--green)}
+.cw-grid .today small{color:var(--gold)}
+.cw-legend{font-size:.8rem;color:var(--muted);margin-block-start:8px;text-align:center}
+
+/* جنتری کی لمبی لسٹ بند رہتی ہے، ٹیپ پر کھلتی ہے */
+.cw-special{margin-block-end:10px}
+.cw-more{margin:0;border:0;border-radius:0;background:transparent;border-block-start:1px solid var(--line)}
+.cw-more>summary{padding:14px 16px;font-size:1.05rem;background:var(--green-soft);color:var(--green);border-block-end:0}
+.cw-more[open]>summary{border-block-end:1px solid var(--line)}
+.cw-more>div{padding:0}
+.cw-more>.cw-adj{padding-block-start:10px}
+.cw-more>.cw-jantri{margin-block-start:12px}
+
+@media (max-width:560px){
+  .cw-dates{grid-template-columns:1fr}
+  .cw-date{border-inline-end:0;border-block-end:1px solid var(--line)}
+  .cw-date:last-child{border-block-end:0}
+  .cw-clock{font-size:2.2rem}
+  .cw-row{grid-template-columns:1fr;gap:0}
+}
