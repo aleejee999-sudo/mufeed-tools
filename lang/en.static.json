@@ -44,11 +44,17 @@
     },
     "terms": {
       "title": "Terms of Service | Mufeed Tools",
-      "description": "Terms of Service for Mufeed Tools: usage rules, accuracy of information and guidelines.",
+      "description": "Terms of Service for Mufeed Tools: usage rules, accuracy of information, and terms of use.",
       "h1": "Terms of Service",
       "crumb": "Terms of service",
-      "lead": "Please read these terms carefully before using our website and tools.",
-      "content": "<p>Welcome to <strong>Mufeed Tools</strong>. By accessing or using our website and utility tools, you agree to be bound by these Terms of Service.</p><h3>1. Use of Tools</h3><p>All online utilities (including Date Converters, Age Calculators, and Jantri) are provided for free for personal and informational use.</p><h3>2. Accuracy of Information</h3><p>While we strive for maximum accuracy, all calculations and outputs are provided 'as is' without warranty of any kind.</p><h3>3. Privacy Policy</h3><p>Your privacy is important to us. Please refer to our Privacy Policy for details on data handling.</p>"
+      "lead": "Please read these terms carefully before using our website and utility tools.",
+      "sections": [
+        { "h": "Acceptance of Terms", "body": "<p>By accessing or using <strong>Mufeed Tools</strong>, you agree to be bound by these Terms of Service. If you do not agree to these terms, please do not use our website or services.</p>" },
+        { "h": "Use of Utility Tools", "body": "<p>Our tools, including calculators, unit converters, and utilities, are provided for general information and convenience only. While we strive for accuracy, calculations and results are not guaranteed to be error-free or suitable for legal, financial, or professional use.</p>" },
+        { "h": "Intellectual Property & Fair Use", "body": "<p>All original layout, designs, code, and content on Mufeed Tools are protected by copyright. You may use our tools for personal and commercial purposes, but you may not copy, scrape, or redistribute the source code without permission.</p>" },
+        { "h": "Limitation of Liability", "body": "<p>Mufeed Tools and its maintainers shall not be liable for any direct, indirect, or consequential damages resulting from the use or inability to use our website or tools.</p>" },
+        { "h": "Modifications to Terms", "body": "<p>We reserve the right to update or modify these Terms of Service at any time without prior notice. Continued use of the website following any changes constitutes acceptance of those changes.</p>" }
+      ]
     }
   }
 }
