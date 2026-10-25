@@ -1,0 +1,15 @@
+{
+  "name": "Mufeed Tools",
+  "short_name": "Mufeed",
+  "start_url": "/en/index",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#007bff",
+  "icons": [
+    {
+      "src": "/favicon.ico",
+      "sizes": "64x64 32x32 24x24 16x16",
+      "type": "image/x-icon"
+    }
+  ]
+}

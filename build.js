@@ -1,6 +1,6 @@
 /* Mufeed Tools | build.js | chalane ka tareeqa: node build.js | UTF-8 */
 const fs = require('fs'), path = require('path');
-const SITE = (process.env.SITE_URL || 'https://arabic-tools-1.vercel.app').replace(/\/$/, ''); // domain badalna ho to sirf yahan
+const SITE = (process.env.SITE_URL || 'https://mufeed-tools.vercel.app').replace(/\/$/, ''); // domain badalna ho to sirf yahan
 const ROOT = __dirname, OUT = path.join(ROOT, 'dist');
 const LANGS = ['ur', 'ar', 'en'];
 const META = {

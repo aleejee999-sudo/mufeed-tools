@@ -3,6 +3,8 @@
 <head>
 {{head}}
 </head>
+<link rel="manifest" href="/manifest.json">
+<meta name="theme-color" content="#007bff">
 <body>
 <a class="skip" href="#main">{{site.skip}}</a>
 <header class="site-head">
@@ -20,8 +22,35 @@
     <span>© {{year}} {{site.brand}}</span>
     <span><a href="/{{lang}}/about">{{site.footer.about}}</a> · <a href="/{{lang}}/contact">{{site.footer.contact}}</a> · <a href="/{{lang}}/privacy">{{site.footer.privacy}}</a> . <a href="/{{lang}}/terms">{{site.footer.terms}}</a></span>
   </div>
+  <button id="install-btn" style="display: none; cursor: pointer; background: #007bff; color: white; border: none; padding: 6px 12px; border-radius: 4px; margin-top: 10px;">
+  📱 ایپ انسٹال کریں
+</button>
 </footer>
 <script>document.addEventListener('click',function(e){var a=e.target.closest('.langs a');if(a)document.cookie='site_lang='+a.lang+';path=/;max-age=31536000;samesite=lax'})</script>
 {{scripts}}
+<script>
+  if ('serviceWorker' in navigator) {
+    navigator.serviceWorker.register('/sw.js');
+  }
+
+  let deferredPrompt;
+  const installBtn = document.getElementById('install-btn');
+
+  window.addEventListener('beforeinstallprompt', (e) => {
+    e.preventDefault();
+    deferredPrompt = e;
+    if(installBtn) installBtn.style.display = 'inline-block';
+  });
+
+  if(installBtn) {
+    installBtn.addEventListener('click', async () => {
+      if (!deferredPrompt) return;
+      deferredPrompt.prompt();
+      const { outcome } = await deferredPrompt.userChoice;
+      deferredPrompt = null;
+      installBtn.style.display = 'none';
+    });
+  }
+</script>
 </body>
 </html>
