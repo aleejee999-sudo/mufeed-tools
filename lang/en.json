@@ -2,7 +2,7 @@
   "site": {
     "brand": "Mufeed Tools", "mark": "M", "skip": "Skip to content", "navLabel": "Main menu", "toolsLabel": "Tools",
     "nav": { "home": "Home", "blog": "Blog", "about": "About", "contact": "Contact" },
-    "footer": { "about": "About", "contact": "Contact", "privacy": "Privacy policy" }
+    "footer": { "about": "About", "contact": "Contact", "privacy": "Privacy policy", "terms": "Terms of Service" }
   },
   "tools": {
     "horoscope": { "name": "Horoscope & fortune", "desc": "Find your zodiac sign from your date of birth (for fun only)" },
